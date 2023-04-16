@@ -13,13 +13,13 @@ body{
     text-align: center;
 }
 
-.container .heading{
+.heading{
     color: white;
     font-size: 30px;
     padding-bottom: 25px;
 }
 
-.container #search-box{
+#search-box{
     text-align: center;
     border-radius: 30px;
     font-size: 20px;
@@ -28,7 +28,7 @@ body{
     width: 600px;
 }
 
-.container .container-image{
+.container-image{
     display: flex;
     justify-content: space-between;
     padding: 30px 0px 0px 0px;
@@ -40,7 +40,7 @@ body{
     }
 }
 
-.container .container-image .imagem-front{
+.imagem-front{
     width: 400px;
     border-radius: 5px;
     border: 2px solid black;
@@ -122,7 +122,7 @@ h3{
     width: 100%;
 }
 
-.container #search-box{
+#search-box{
     width: 90%;
 }
 
@@ -143,11 +143,12 @@ h3{
     
 }
 
-@media (max-width: 1430px){
+@media (max-width: 1480px){
     .container-image{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(1,1fr);
         gap: 30px 25px;
         padding: 25px 20px;
+        
     }
 }
