@@ -1,6 +1,6 @@
 let searchBox = document.querySelector('#search-box')
 
-let imagens = document.querySelectorAll('.container .container-image .imagem-front')
+let imagens = document.querySelectorAll('.container .container-image .imagem-front a')
 
 searchBox.oninput = () => {
     imagens.forEach(hide => hide.style.display = 'none')
