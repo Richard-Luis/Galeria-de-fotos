@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
 
-    <link rel="stylesheet" href="style.css">
+    <header class="heading">
+      <h1>Buscar console</h1>
+    </header>
 
-</head>
-<body>
+    <input
+    type="text"
+    name=""
+    placeholder="Digite aqui o console"
+    id="search-box"
+  />
 
-    <div class="container">
+      <div class="container-image">
 
-        <h1 class="heading">
-            Search Image
-        </h1>
+        <div class="imagem-front" data-title="Super nintendo">
+          <a href="nintendo.html"
+            ><img src="imagens/super-nintendo2.png" alt=""
+          /></a>
 
-        <input type="text" placeholder="Write here..." id="search-box">
-
-        <div class="container-image">
-
-             <div class="imagem-front" data-title="Games Super Nintendo">
-
-                <a href="nintendo.html"><img src="imagens/super-nintendo2.png" alt=""></a>
-
-                <h3>Super Nintendo</h3>
-
-             </div>
-
-             <div class="imagem-front" data-title="Games Playstation 1">
-
-                    <a href="ps1.html"><img src="imagens/ps1.png" alt=""></a>
-                    
-                <h3>Playstation 1</h3>
-
-             </div>
-
-             <div class="imagem-front" data-title="Games Playstation 2">
-
-                <a href="ps2.html"><img src="imagens/ps2.png" alt=""></a>
-
-                <h3>Playstation 2</h3>
-
-             </div>
+          <p>Super Nintendo</p>
 
         </div>
 
-    </div>
-    
-    <script src="js/main.js"></script>
+        <div class="imagem-front" data-title="Playstation 1">
 
-</body>
+          <a href="ps1.html"><img src="imagens/ps1.png" alt="" /></a>
+
+          <p>Playstation 1</p>
+        </div>
+
+        <div class="imagem-front" data-title="Playstation 2">
+          <a href="ps2.html"><img src="imagens/ps2.png" alt="" /></a>
+
+          <p>Playstation 2</p>
+
+        </div>
+
+      </div>
+
+      <script src="js/main.js"></script>
+
+  </body>
 </html>

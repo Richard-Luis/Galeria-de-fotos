@@ -1,20 +1,18 @@
-let searchBox = document.querySelector('#search-box')
+const searchBox = document.getElementById("search-box");
 
-let imagens = document.querySelectorAll('.container .container-image .imagem-front a')
+const imagens = [...document.querySelectorAll(".imagem-front")];
 
-searchBox.oninput = () => {
-    imagens.forEach(hide => hide.style.display = 'none')
-    let value = searchBox.value
-
-    imagens.forEach(filter => {
-        let title = filter.getAttribute('data-title')
-
-        if(value == title){
-            filter.style.display = "block";
-        }
-
-        if(searchBox.value == ''){
-            filter.style.display = "block";
-        }
-    })
-}
+searchBox.addEventListener("input", ({ target }) => {
+  for (const imagem of imagens) {
+    if (
+      !imagem
+        .getAttribute("data-title")
+        .toLowerCase()
+        .includes(target.value.toLowerCase())
+    ) {
+      imagem.style.display = "none";
+    } else {
+      imagem.style.display = "block";
+    }
+  }
+});
